@@ -18,6 +18,14 @@ function combineUsers(...args) {
 
 }
 
+const result = combineUsers(
+    ["Dennis", "Mary"],
+    ["John"],
+    ["Alice", "Brian"]
+);
+
+console.log(result);
+
 
 module.exports = {
   ...(typeof combineUsers !== 'undefined' && { combineUsers })
